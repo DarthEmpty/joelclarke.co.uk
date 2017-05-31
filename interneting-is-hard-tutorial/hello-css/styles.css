@@ -1,0 +1,39 @@
+body {
+  color: #414141;
+  background-color: #EEEEEE;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2em; /* 2 * body font size */
+}
+
+h2 {
+  font-size: 1.6em; /* 1.6 * body font size */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  /*
+  Prioritise Helvetica
+  Use Arial if the user doesn't have Helvetica
+  Use the system default sans-serif font if the user has neither
+  */
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: lower-roman;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: left;
+}
