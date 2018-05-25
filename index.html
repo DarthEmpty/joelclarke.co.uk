@@ -3,48 +3,90 @@
   <head>
     <meta charset="utf-8">
     <title>Joel Clarke</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-indigo.min.css" />
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </head>
 
   <body>
-    <h1>Hey there!</h1>
-    
-    <p class="intro">
-      I'm Joel Clarke and I'm an Artificial Intelligence PhD student at Royal Holloway University.
-    </p>
+    <div class="mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout-icon">
+          <!--TODO: Create Icon to put in Navbar-->
+        </div>
+        <div class="mdl-layout__header-row">
+          <span class="title mdl-layout__title">Joel Clarke</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation">
+            <a class="option mdl-navigation__link" href="#">
+              <i class="material-icons">create</i>
+              Blog
+            </a>
+            <a class="option mdl-navigation__link" href="#">
+              <i class="material-icons">photo_library</i>
+              Gallery
+            </a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+        <span class="title mdl-layout__title">Joel Clarke</span>
+        <nav class="mdl-navigation">
+            <a class="option mdl-navigation__link" href="#">
+              <i class="material-icons">create</i>
+              Blog
+            </a>
+            <a class="option mdl-navigation__link" href="#">
+              <i class="material-icons">photo_library</i>
+              Gallery
+            </a>
+          </nav>
+      </div>
 
-    <p>
-      This site is a continuous project for me to work on, primarily dedicated to telling you about myself and to being a place for me to rant about (hopefully) interesting things.
-    </p>
+      <main class="mdl-layout__content">
+        <h1>Hey there!</h1>
+        
+        <p class="intro">
+          I'm Joel Clarke and I'm an Artificial Intelligence PhD student at Royal Holloway University.
+        </p>
 
-    <p>
-      During my time at Uni, I was fortunate enough to take part in the <strong>Undergraduate Research Opportunities Programme (UROP)</strong> twice.
-      In my first year, I worked alongside a postgraduate student to investigate vulnerabilities in Android SSL Security.
-      In my second year, I worked with a different postgraduate student and another second year student using Machine Learning to "unstrip" stripped binaries. 
-    </p>
+        <p>
+          This site is a continuous project for me to work on, primarily dedicated to telling you about myself and to being a place for me to rant about (hopefully) interesting things.
+        </p>
 
-    <p>
-      During my second and third years, I took part in a Christian hackathon: <strong>Code for the Kingdom</strong>.
-      This is an annual, weekend long hackathon run by a company called Kingdom Code.
-      At the event, I've worked on:
-      <ul>
-        <li><a href="https://github.com/richstandbrook/prayertree" target="_blank">PrayerTree</a> - an app dedicated to helping members of a church share their prayers with each other.</li>
-        <li><a href="https://github.com/pixafera/geobudget" target="_blank">GeoBudget</a> - a budgeting app designed to remind people of their budget when they're nearby places where they spend money.</li>
-      </ul>
-    </p>
+        <p>
+          During my time at Uni, I was fortunate enough to take part in the <strong>Undergraduate Research Opportunities Programme (UROP)</strong> twice.
+          In my first year, I worked alongside a postgraduate student to investigate vulnerabilities in Android SSL Security.
+          In my second year, I worked with a different postgraduate student and another second year student using Machine Learning to "unstrip" stripped binaries. 
+        </p>
 
-    <p>
-      In my spare time, I enjoy drawing, playing video games and working on projects such as:
-      <ul>
-        <li><a href="https://github.com/arranf/jonathans-movies-client" target="_blank">jonathansmovies.com</a> - a voting web app using Vue and FeathersJS for a smooth, interactive experience</li>
-        <li>This website! </li>
-      </ul>
-      Sooner or later, you'll see some of my drawings here too - I'm hoping to start making a comic in the near future so watch out for that.
-    </p>
+        <p>
+          During my second and third years, I took part in a Christian hackathon: <strong>Code for the Kingdom</strong>.
+          This is an annual, weekend long hackathon run by a company called Kingdom Code.
+          At the event, I've worked on:
+          <ul>
+            <li><a href="https://github.com/richstandbrook/prayertree" target="_blank">PrayerTree</a> - an app dedicated to helping members of a church share their prayers with each other.</li>
+            <li><a href="https://github.com/pixafera/geobudget" target="_blank">GeoBudget</a> - a budgeting app designed to remind people of their budget when they're nearby places where they spend money.</li>
+          </ul>
+        </p>
 
-    <p class="end">
-      <em>Enjoy your stay :)</em>
-    </p>
+        <p>
+          In my spare time, I enjoy drawing, playing video games and working on projects such as:
+        </p>
+          <ul>
+            <li><a href="https://github.com/arranf/jonathans-movies-client" target="_blank">jonathansmovies.com</a> - a voting web app using Vue and FeathersJS for a smooth, interactive experience</li>
+            <li>This website! </li>
+          </ul>
+        <p>
+          Sooner or later, you'll see some of my drawings here too - I'm hoping to start making a comic in the near future so watch out for that.
+        </p>
 
+        <p class="outro">
+          <em>Enjoy your stay :)</em>
+        </p>
+      </main>
+    </div>
   </body>
 </html>

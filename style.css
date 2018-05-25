@@ -1,25 +1,19 @@
 body {
   color: #333333;
-  background-color: #FFFFFF;
-  font-family: "Helvetica", "Arial", sans-serif;
+  background-color: #EEEEEF;
   font-size: 18px;
+}
+
+main {
   width: 40em;
   margin: auto;
   box-sizing: border-box;
 }
 
-h1, h2 {
-  text-align: center;
-  font-weight: normal
-}
-
 h1 {
+  text-align: center;
+  font-weight: normal;
   font-size: 2em;
-}
-
-h2 {
-  font-size: 1.6em;
-  margin-top: 1.6em;
 }
 
 p {
@@ -34,6 +28,14 @@ a {
   text-align: center;
 }
 
-.end {
+.outro {
   text-align: center;  
+}
+
+.title, .option {
+  font-weight: bold
+}
+
+.option:hover {
+  background-color: #EEEEEF;
 }
