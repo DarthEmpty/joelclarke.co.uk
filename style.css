@@ -10,7 +10,7 @@ main {
   box-sizing: border-box;
 }
 
-h1{
+h1 {
   text-align: center;
   font-weight: normal;
   font-size: 2em;
@@ -32,6 +32,10 @@ a {
   text-align: center;  
 }
 
-.title {
+.title, .option {
   font-weight: bold
+}
+
+.option:hover {
+  background-color: #EEEEEF;
 }
