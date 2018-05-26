@@ -1,23 +1,26 @@
 body {
   color: #333333;
-  background-color: #EEEEEF;
-  font-size: 18px;
+  background-color: #EEEEEE;
 }
 
-main {
-  width: 40em;
+p, li {
+  max-width: 800px;
+  font-size: 20px;
   margin: auto;
-  box-sizing: border-box;
-}
-
-h1 {
-  text-align: center;
-  font-weight: normal;
-  font-size: 2em;
+  line-height: 1.6em;
 }
 
 p {
-  text-align: justify;
+  text-align: justify;  
+  margin-top: 1.6em;
+}
+
+li {
+  text-align: center
+}
+
+ul {
+  list-style: none;
 }
 
 a {
@@ -26,10 +29,12 @@ a {
 
 .intro {
   text-align: center;
+  margin-bottom: 2em;
 }
 
 .outro {
-  text-align: center;  
+  text-align: center; 
+  margin-bottom: 2em; 
 }
 
 .title, .option {
@@ -37,5 +42,5 @@ a {
 }
 
 .option:hover {
-  background-color: #EEEEEF;
+  background-color: #EEEEEE;
 }
