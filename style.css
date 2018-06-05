@@ -3,16 +3,14 @@ body {
   background-color: #EEEEEE;
 }
 
-p, li {
+p, ul, li {
   max-width: 800px;
-  font-size: 20px;
   margin: auto;
-  line-height: 1.6em;
 }
 
 p {
-  text-align: left;  
-  margin-top: 1.6em;
+  text-align: center;  
+  margin-top: 2em;
 }
 
 li {
@@ -21,20 +19,17 @@ li {
 
 ul {
   list-style: none;
+  justify-content: space-around;
 }
 
 a {
   text-decoration: none;
 }
 
-.intro {
+.intro, .outro {
   text-align: center;
-  margin-bottom: 2em;
-}
-
-.outro {
-  text-align: center; 
-  margin-bottom: 2em; 
+  max-width: 900px;
+  margin: 2em auto;
 }
 
 .title, .option {
