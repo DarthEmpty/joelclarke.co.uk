@@ -31,7 +31,11 @@ a {
   text-decoration: none;
 }
 
-.intro, .outro {
+code {
+  word-wrap: normal;
+}
+
+.intro, .outro{
   text-align: center;
   max-width: 900px;
   margin: 2em auto;
@@ -43,6 +47,15 @@ a {
 
 .option:hover {
   background-color: #EEEEEE;
+}
+
+.highlighter-rouge {
+  max-width: 800px;
+  margin: 2em auto;
+}
+
+.highlight {
+  padding: 1em;
 }
 
 @media only screen and (min-width: 961px) {
