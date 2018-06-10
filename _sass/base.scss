@@ -22,10 +22,6 @@ ul {
   justify-content: center;
 }
 
-li {
-  text-align: center;
-}
-
 a {
   text-decoration: none;
 }
@@ -55,6 +51,14 @@ code {
 
 .highlight {
   padding: 1em;
+}
+
+.project-list-item {
+  text-align: center;
+}
+
+.post-preview {
+  text-align: left;
 }
 
 @media only screen and (min-width: 961px) {

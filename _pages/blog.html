@@ -11,7 +11,8 @@ permalink: /blog
     {% for post in site.posts %}
       <li class="
         mdl-cell mdl-cell--4-col
-        mdl-card mdl-shadow--4dp"
+        mdl-card mdl-shadow--4dp
+        post-preview"
       >
 
         <div class="mdl-card__title mdl-card--expand">
@@ -24,7 +25,7 @@ permalink: /blog
         </time>
         <div class="mdl-card__actions">
           <a href="{{ post.url | prepend: site.baseurl }}">
-            Read
+            READ
           </a>
         </div>
         
