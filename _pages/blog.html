@@ -6,30 +6,35 @@ permalink: /blog
 
 {% if site.posts.size == 0 %}
   <h6 class="intro">Oops! looks like there aren't any posts yet...</h6>
+
 {% else %}
   <ul class="mdl-grid">
+
     {% for post in site.posts %}
       <li class="
-        mdl-cell mdl-cell--4-col
-        mdl-card mdl-shadow--4dp
-        post-preview"
-      >
+        mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet
+        mdl-card mdl-shadow--3dp
+        post-preview
+      ">
 
         <div class="mdl-card__title mdl-card--expand">
           <h5 class="mdl-card__title-text">
             {{ post.title }}
           </h5>
         </div>
-        <time class="mdl-card__supporting-text">
+        <div class="mdl-card__supporting-text">
           {{ post.date | date: "%-d %B, %Y" }}
-        </time>
-        <div class="mdl-card__actions">
-          <a href="{{ post.url | prepend: site.baseurl }}">
-            READ
+          <br>
+          {{ post.excerpt }}
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-js-button mdl-button--accent" href="{{ post.url | prepend: site.baseurl }}">
+            Read more
           </a>
         </div>
-        
+      
       </li>
     {% endfor %}
-  </ul>
+
+    </ul>
 {% endif %}
