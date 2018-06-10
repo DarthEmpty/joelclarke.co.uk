@@ -23,9 +23,10 @@ permalink: /blog
           </h5>
         </div>
         <div class="mdl-card__supporting-text">
+          {{ post.excerpt | truncate: 150}}
+        </div>
+        <div class="mdl-card__supporting-text">
           {{ post.date | date: "%-d %B, %Y" }}
-          <br>
-          {{ post.excerpt }}
         </div>
         <div class="mdl-card__actions mdl-card--border">
           <a class="mdl-button mdl-js-button mdl-button--accent" href="{{ post.url | prepend: site.baseurl }}">

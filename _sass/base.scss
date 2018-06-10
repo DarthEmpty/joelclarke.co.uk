@@ -12,11 +12,6 @@ p, ul {
   max-width: 800px;
 }
 
-p {
-  text-align: center;  
-  margin-top: 2em;
-}
-
 ul {
   list-style: none;
   justify-content: center;
@@ -30,10 +25,15 @@ code {
   word-wrap: normal;
 }
 
-.intro, .outro{
+.intro, .outro {
   text-align: center;
   max-width: 900px;
   margin: 2em auto;
+}
+
+.detail {
+  text-align: center;  
+  margin-top: 2em;
 }
 
 .title, .option {
@@ -65,23 +65,23 @@ code {
   max-width: 800px;
 }
 
-// Desktop Paragraph Width
+// Desktop Detail Width
 @media only screen and (min-width: 961px) {
-  p {
+  .detail {
     margin: 2em auto 0em auto;
   }
 }
 
-// Tablet Paragraph Width
+// Tablet Detail Width
 @media only screen and (max-width: 960px) and (min-width: 401px) {
-  p {
+  .detail {
     margin: 2em 2em 0em 2em;
   }
 }
 
-// Mobile Paragraph Width
+// Mobile Detail Width
 @media only screen and (max-width: 400px) {
-  p {
+  .detail {
     margin: 2em 1em 0em 1em;
   }
 }
