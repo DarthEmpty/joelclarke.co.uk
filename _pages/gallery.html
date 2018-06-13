@@ -1,0 +1,20 @@
+---
+layout: default
+title: Gallery
+permalink: /gallery
+---
+
+{% if site.art.size == 0 %}
+  <h6 class="intro">Oops! Looks like there yet...</h6>
+
+{% else %}
+  <ul class="mdl-grid">
+
+    {% for post in site.posts %}
+      <li class="mdl-cell">
+        <!-- TODO: Populate with folders of pictures -->
+      </li>
+    {% endfor %}
+
+    </ul>
+{% endif %}
