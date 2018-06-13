@@ -6,6 +6,7 @@
 body {
   color: #333333;
   background-color: #EEEEEE;
+  display: flex;
 }
 
 p, ul {
@@ -23,6 +24,19 @@ a {
 
 code {
   word-wrap: normal;
+}
+
+.mdl-layout {
+  display: flex;
+  flex-direction: column;
+
+  .mdl-layout__content {
+    flex: 1 0 auto;
+  }
+
+  .mdl-mini-footer {
+    flex-shrink: 0;
+  }
 }
 
 .intro, .outro {
