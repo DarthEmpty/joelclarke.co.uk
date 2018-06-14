@@ -9,13 +9,17 @@ body {
   display: flex;
 }
 
-p, ul {
+p, ul, ol {
   max-width: 800px;
 }
 
 ul {
   list-style: none;
   justify-content: center;
+}
+
+ol {
+  padding-left: 2em;
 }
 
 a {
@@ -80,21 +84,21 @@ code {
 
 // Desktop Detail Width
 @media only screen and (min-width: 961px) {
-  p {
-    margin: 2em auto 0em auto;
+  p, ul, ol {
+    margin: 2em auto 2em auto;
   }
 }
 
 // Tablet Detail Width
 @media only screen and (max-width: 960px) and (min-width: 401px) {
-  p {
-    margin: 2em 2em 0em 2em;
+  p, ul, ol {
+    margin: 2em 2em 2em 2em;
   }
 }
 
 // Mobile Detail Width
 @media only screen and (max-width: 400px) {
-  p {
-    margin: 2em 1em 0em 1em;
+  p, ul, ol {
+    margin: 2em 1em 2em 1em;
   }
 }
