@@ -82,6 +82,11 @@ code {
   max-width: 800px;
 }
 
+.mdl-mini-footer--link-list li,
+.mdl-mini-footer__link-list li {
+  margin: auto 8px;
+}
+
 // Desktop Detail Width
 @media only screen and (min-width: 961px) {
   p, ul, ol {
