@@ -1,0 +1,30 @@
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__right-section">
+    <ul class="mdl-mini-footer__link-list">
+      <!-- Email Link -->
+      <li>
+        <a href="{{ site.email || prepend: 'mailto:' }}">
+          <i class="fas fa-2x fa-at"></i>
+        </a>
+      </li>
+      
+      <!-- Github Link -->
+      <li>
+        <a href="{{ site.github_username || | prepend: 'https://github.com/' }}" target="_blank">
+          <i class="fab fa-2x fa-github"></i> 
+        </a>
+      </li>
+  
+      <!-- Twitter Link -->
+      <li>
+        <a href="{{ site.twitter_username || | prepend: 'https://twitter.com/' }}" target="_blank">
+          <i class="fab fa-2x fa-twitter"></i>
+        </a>
+      </li>
+  
+    </ul>
+  </div>
+
+  <div class="mdl-mini-footer__right-section">
+  </div>
+</footer>
