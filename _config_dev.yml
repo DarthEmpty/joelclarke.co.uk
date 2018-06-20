@@ -26,6 +26,8 @@ github_username:  DarthEmpty
 sass:
   sass_dir: _sass
 include: ['_pages']
+plugins:
+  - jemoji
 kramdown:
   input: GFM
   auto_ids: true
