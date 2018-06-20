@@ -9,7 +9,7 @@ body {
   display: flex;
 }
 
-p, ul {
+p, ul, ol, h2 {
   max-width: 800px;
 }
 
@@ -18,12 +18,22 @@ ul {
   justify-content: center;
 }
 
+ol {
+  padding-left: 2em;
+}
+
 a {
   text-decoration: none;
 }
 
 code {
   word-wrap: normal;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  align-self: center;
 }
 
 .mdl-layout {
@@ -74,6 +84,11 @@ code {
   margin: auto;
 }
 
+.emoji {
+  max-width: 1.4em;
+}
+
+// Altered MDL Classes
 .mdl-grid {
   max-width: 800px;
 }
@@ -91,21 +106,33 @@ code {
 
 // Desktop Detail Width
 @media only screen and (min-width: 961px) {
-  p {
-    margin: 2em auto 0em auto;
+  p, ul, ol {
+    margin: 2em auto;
+  }
+
+  h2 {
+    margin: 1em auto;
   }
 }
 
 // Tablet Detail Width
 @media only screen and (max-width: 960px) and (min-width: 401px) {
-  p {
-    margin: 2em 2em 0em 2em;
+  p, ul, ol {
+    margin: 2em;
+  }
+
+  h2 {
+    margin: 1em 0.6em;
   }
 }
 
 // Mobile Detail Width
 @media only screen and (max-width: 400px) {
-  p {
-    margin: 2em 1em 0em 1em;
+  p, ul, ol {
+    margin: 2em 1em;
+  }
+
+  h2 {
+    margin: 1em 0.3em;
   }
 }
