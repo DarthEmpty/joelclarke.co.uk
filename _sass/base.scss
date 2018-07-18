@@ -98,6 +98,12 @@ img {
   margin: auto 8px;
 }
 
+.mdl-layout__drawer,
+.mdl-layout__drawer-button,
+.mdl-layout__obfuscator {
+  position: fixed;
+}
+
 // Desktop Detail Width
 @media only screen and (min-width: 961px) {
   p, ul, ol {
