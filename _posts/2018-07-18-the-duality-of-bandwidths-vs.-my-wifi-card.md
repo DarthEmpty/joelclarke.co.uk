@@ -6,7 +6,13 @@ A while ago, a friend of mine bought [Google Wifi] and started using it as the m
 
 My laptop, on the other hand, was not...
 
-I have a Dell Precision M4700 named *DMO* (Inspired by *BMO* from the cartoon *Adventure Time*). It's a chunky workstation that's designed to be easily moddable. I love it to bits but we've come across our fair share of troubles - which is probably bound to happen when you buy an outdated, second hand laptop off of eBay.
+The rest of this post is about the long, arduous journey that I ventured on in order to make my laptop and the router agree with each other - perhaps it might help you to avoid having to spend as much time on it as I did.
+
+## My Laptop, DMO
+
+I have a Dell Precision M4700 named *DMO* (Inspired by the cartoon character: *BMO* from *Adventure Time*). It's a chunky workstation that's designed to be easily moddable. I've replaced the CD Drive with a second SSD and installed a Bluetooth Module and I was surprised at how easy the process was both times. It's also worth noting that I have both Windows 10 and Ubuntu 16.04 installed on DMO where both Operating Systems occupy different SSDs. 
+
+I love DMO to bits but we've come across our fair share of troubles - which is probably bound to happen when you buy an outdated second hand laptop off of eBay :sweat_smile:
 
 DMO's interactions with Google Wifi brought another issue to light. It seemed that, after connecting to the router, everything would work well up until a few moments later when the connection would just drop out. The connection wouldn't be restored until I actively disabled and re-enabled Wifi from the laptop which lead to the connection dropping out again, and so on. This would happen annoyingly often when playing the PC game: *Heroes of the Storm* - a game that's very reliant on a stable internet connection. There were incidents where I was penalised for disconnecting from the game because of DMO's petty disagreements with Google Wifi.
 
