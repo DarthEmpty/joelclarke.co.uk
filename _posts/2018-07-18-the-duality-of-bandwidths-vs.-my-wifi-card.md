@@ -18,18 +18,21 @@ DMO's interactions with Google Wifi brought another issue to light. It seemed th
 
 ## The Root of the Problem - Wifi Standards(?)
 
-Eventually, enough was enough. After a little digging, my friend discovered that the wifi card itself was the issue. This was confirmed after I then researched the different wifi standards. The discussions that I read about the most were between the 802.11n and 802.11ac standards.
+Eventually, enough was enough. After a little digging, my friend discovered that the wifi card itself was the issue. This was confirmed after I then researched the different WLAN standards and noticed that some were better equipped to deal with Google Wifi than others.
 
-There are many wifi standards and, if you're interested in them, I would check out [this blog post].
+These standards were made by the [Institute of Electrical and Electronics Engineers (IEEE)]. Since their first WLAN standard,  802.11, was created in 1997, IEEE have gone through many iterations of standards - each one aiming to be an improvement on the previous one. If you want to find out more about the different standards and their progression, I would recommend [this blog post].
 
-My old wifi card was 802.11b/g/n compatiable (making it an 802.11n card). Because one of Google Wifi's features is dual-band wifi which is a feature of the 802.11ac standard, I figured that it would be a good idea if my new wifi card was also 802.11ac compatiable. And so, I looked around on eBay for the cheapest, nearest, 802.11ac compatiable wifi card I could find.
+The standards that I became most interested in, however, were 802.11n and 802.11ac. 802.11ac was made to be an improvement over 802.11n, utilising **dual-band wireless technology**. This allows for an 802.11ac compatiable device and a 802.11ac compatiable router to maintain 2 connections of different bandwidths at the same time.
 
-It's odd though, Google states that Google Wifi is capable of *Simultaneous dual-band Wifi (2.4 GHz/5 GHz) supporting IEEE 802.11a/b/g/n/ac* (This can be seen [here] under the *Connectivity* section).
+By calling the command `sudo lshw -c network` on Ubuntu, I found out that my old wifi interface was a `BCM4352 802.11b/g/n Wireless Network Adapter`, meaning that my old wifi card was 802.11b/g/n compatiable (making it an 802.11n card). Because one of Google Wifi's features is dual-band wifi which is a feature of the 802.11ac standard, I figured that it would be a good idea for my new wifi card to also be 802.11ac compatiable. And so, I looked around on eBay for the cheapest, nearest, 802.11ac compatiable wifi card I could find.
+
+It's odd though, Google states that Google Wifi is capable of *Simultaneous dual-band Wifi (2.4 GHz/5 GHz) supporting IEEE 802.11a/b/g/n/ac* (This can be seen [here] under the *Connectivity* section). That implies that my old wifi card should have been OK because of the backwards compatiablity that Google Wifi offers. Regardless, after buying the new wifi card (and a couple more hiccups that I'll tell you about next), the *Heroes of the Storm* became a lot less frustrating to play.
 
 ## A Sizeable Mistake
 
 ## Driven Mad by Drivers
 
 [Google Wifi]: https://store.google.com/product/google_wifi
+[Institute of Electrical and Electronics Engineers (IEEE)]: https://www.ieee.org/
 [this blog post]: https://www.lifewire.com/wireless-standards-802-11a-802-11b-g-n-and-802-11ac-816553
 [here]: https://store.google.com/product/google_wifi_specs
