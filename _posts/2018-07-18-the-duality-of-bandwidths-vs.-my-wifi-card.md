@@ -38,11 +38,48 @@ I later discovered that I had ordered an 802.11ac card of the wrong **form facto
 
 ![An M.2 Wifi card (half height)](/assets/images/m2.png)
 
-So, unfortunately, I had to spend more money than I was expecting to in getting the correct wifi card for my laptop. And, unfortunately, this would not be the last bit of trouble I had to deal with...
+So, unfortunately, I had to spend more money than I was expecting to in getting the correct wifi card for my laptop. And, unfortunately, this would not be the last bit of trouble I had to deal with... 
 
 ## Driven Mad by Drivers
+
+The final hurdle was installing the appropriate wifi card drivers on both Operating Systems. For this bit, I had to be hooked up to the router through Ethernet in order to make the necessary downloads. (Obviously, you can't )
+
+With Windows, this was very easy - Dell are very good at producing and maintaining drivers for all of their products when it comes to Windows. Visiting the [Drivers and Downloads] section of their site provides a plethora of drivers for multiple hardware components for many versions of Windows.
+
+With Ubuntu, this appeared to only be slightly more difficult since you had to use the command line. Instructions online told me that it should be as easy as calling `sudo apt install bcmwl-kernel-source`.
+
+*It was not...* :unamused:
+
+The package failed to build during installation. This wasn't clear to me until I read the output on the console from my umpteenth attempt to install the driver. An exerpt from said output reads something along the lines of:
+
+```bash
+...
+Building initial module for 4.15.0-24-generic
+ERROR: Cannot create report: [Errno 17] File exists:
+'/var/crash/bcmwl-kernel-source.0.crash'
+Error! Bad return status for module build on kernel:
+4.15.0-24-generic (x86_64)
+Consult /var/lib/dkms/bcmwl/6.30.223.271+bdcom/build/make.log for more information.
+modprobe: FATAL: Module wl not found in directory /lib/modules/4.15.0-24-generic
+update-initramfs: deferring update (trigger activated)
+Processing triggers for initramfs-tools (0.122ubuntu8.11)
+...
+```
+
+Horrible, right? The part that reads `modprobe: FATAL: Module wl not found in directory /lib/modules/4.15.0-24-generic` caused me to go on a week long goose chase for the module ml. After many failed attempts at installing said module, I turned back to Google in search of other potential solutions.
+
+Somehow, the stars aligned just right for me to discover that this problem had a solution on [askubuntu.com] which basically states that the driver I was trying to install was incompatiable with my kernel version. This basically meant that, no matter how hard I tried, that specific version of the driver could never be installed on my system in its current state. So, instead, I had to run the following instructions to download and install the driver that worked:
+
+```bash
+wget http://archive.ubuntu.com/ubuntu/pool/restricted/b/bcmwl/bcmwl-kernel-source_6.30.223.271+bdcom-0ubuntu1~1.3_amd64.deb
+sudo dpkg -i bcmwl-kernel-source_6.30.223.271+bdcom-0ubuntu1~1.3_amd64.deb
+```
+
+And so, after that entire debarcle, I finally managed to enjoy working wifi on both Windows and Ubuntu in all of the places that provide it. DMO and Google Wifi finally get on and I couldn't be happier! Let's hope that DMO's next issue doesn't come too soon... :sweat_smile:
 
 [Google Wifi]: https://store.google.com/product/google_wifi
 [Institute of Electrical and Electronics Engineers (IEEE)]: https://www.ieee.org/
 [this blog post]: https://www.lifewire.com/wireless-standards-802-11a-802-11b-g-n-and-802-11ac-816553
 [here]: https://store.google.com/product/google_wifi_specs
+[Drivers and Downloads]: https://www.dell.com/support/home/uk/en/ukbsdt1?app=drivers
+[askubuntu.com]: https://askubuntu.com/questions/1052403/how-can-i-fix-broadcom-driver-wifi-with-4-15-0-xx-kernel-on-ubuntu-16-04
