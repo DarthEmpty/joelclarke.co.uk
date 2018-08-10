@@ -10,7 +10,7 @@ This is kinda big for me mainly because this is the first time I've done somethi
 
 *And it was a lot easier than I thought it was going to be.*
 
-Honestly, It's probably never been easier to set up a secure static blog. Now that [GitHub Pages supports HTTPS for custom domains](https://blog.github.com/2018-05-01-github-pages-custom-domains-https/), it's relatively simple to:
+Honestly, It's probably never been easier to set up a secure static blog. Now that [GitHub Pages supports HTTPS for custom domains], it's relatively simple to:
 
 1. Set up a GitHub repository to host your site for free
 2. Create said site
@@ -25,7 +25,7 @@ Hopefully, by the end of this, you'll have a website that works like mine. It mi
 
 ## Hosting the Site Using GitHub Pages
 
-The first step to creating any project stored on GitHub is to make a repository for it. This is simple enough - the difference here being that you'll be using your repository as a web server through [GitHub Pages](https://pages.github.com/).
+The first step to creating any project stored on GitHub is to make a repository for it. This is simple enough - the difference here being that you'll be using your repository as a web server through [GitHub Pages].
 
 Initialise a new repository on GitHub under the name `<your-username>.github.io`. The name is *very* important - it's what tells GitHub that you want to use the repository to host a website using GitHub Pages.
 
@@ -35,9 +35,9 @@ Clone the new repository before following the next step.
 
 Your site can be created any which way you want. As long as it's static and stored in the repository set up and cloned previously, GitHub Pages will be able to host it with no issues.
 
-I do, however, highly recommend that you use [Jekyll](https://jekyllrb.com/), a really simple static site generator, when doing so. I can testify to it being a very easy way to create web pages using Markdown and to maintain a blog with little hassle.
+I do, however, highly recommend that you use [Jekyll], a really simple static site generator, when doing so. I can testify to it being a very easy way to create web pages using Markdown and to maintain a blog with little hassle.
 
-If you do decide to use Jekyll and you're new to it, I would give [this tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/) a go - it walks you through how to generate a static site, how to make your own custom theme, and more. I found it very helpful when creating this site, in fact!
+If you do decide to use Jekyll and you're new to it, I would give [this tutorial] a go - it walks you through how to generate a static site, how to make your own custom theme, and more. I found it very helpful when creating this site, in fact!
 
 **Please Note:** Some of the steps will be unnecessary in your case. However, it should be relatively easy to figure out which steps are such and to figure out what to do instead. For example, when reaching the section entitled *Install Jekyll*, you won't have to initialise another repository. Instead, you can achieve the same effect by just running:
 
@@ -51,13 +51,13 @@ jekyll new <path/to/your/repository>
 
 That's a good looking website that deserves a good looking domain name to go with it!
 
-You'll need to buy an available domain name from a Domain Name Registrar. Personally, if you're going to buy it from anybody, I would recommend [gandi.net](https://www.gandi.net) simply because their slogan is literally *No bullshit*. 
+You'll need to buy an available domain name from a Domain Name Registrar. Personally, if you're going to buy it from anybody, I would recommend [gandi.net] simply because their slogan is literally *No bullshit*. 
 
 Once you've bought the domain name, you can go to your repository's settings and go to the *GitHub Pages* section. There, you'll see a *Custom Domain* subsection. Fill the text field in said subsection with your domain name as below.
 
 ![Custom Domain Subsection](/assets/images/custom_domain.png)
 
-You may have to wait a few hours or so before you can edit the Domain's DNS records but that's what you'll be doing next (With Gandi, this is done by going to the [Domain Admin Page](https://admin.gandi.net/domain/) and clicking on the appropriate domain name, followed by *DNS Records*).
+You may have to wait a few hours or so before you can edit the Domain's DNS records but that's what you'll be doing next (With Gandi, this is done by going to the [Domain Admin Page] and clicking on the appropriate domain name, followed by *DNS Records*).
 
 **Remove all records that are currently stored.** Then, you'll want to create 4 new DNS records of type A pointing to the following IP Addresses:
 
@@ -74,7 +74,7 @@ Then go to sleep. It takes a very long time for Registrars to update your DNS re
 
 When you wake up, go and check out your website using your new domain name. We're very nearly done - now just to make sure that all users that access the site can access it securely through HTTPS.
 
-Thankfully, this bit is very easy. GitHub Pages has paired with [Let's Encrypt](https://letsencrypt.org/) to provide free, automatic SSL Certificates to everyone using GitHub Pages. All you have to do is go back to your GitHub repository settings, go back to the *GitHub Pages* section and, this time, go to the subsection entitled *Enforce HTTPS*.
+Thankfully, this bit is very easy. GitHub Pages has paired with [Let's Encrypt] to provide free, automatic SSL Certificates to everyone using GitHub Pages. All you have to do is go back to your GitHub repository settings, go back to the *GitHub Pages* section and, this time, go to the subsection entitled *Enforce HTTPS*.
 
 ![Enforce HTTPS Subsection](/assets/images/enforce_https.png)
 
@@ -86,6 +86,15 @@ However, there are 2 possible error messages that may appear next to the checkbo
 
 - **Unavailable for your site because you have a custom domain configured**
   
-  All you need to do here is add the custom domain name again. This is done by going back to the *Custom Domain* subsection, removing the custom domain, saving, re-entering it and saving again. This error message had me stumped for a good long while and I only solved the issue thanks to [this blog post](https://timeandupdate.com/2018/05/custom-domain-in-github-page-support-https/).
+  All you need to do here is add the custom domain name again. This is done by going back to the *Custom Domain* subsection, removing the custom domain, saving, re-entering it and saving again. This error message had me stumped for a good long while and I only solved the issue thanks to [this blog post].
 
 And that's it! Now, when you visit your site, you can rest with the knowledge that it has a free SSL Certificate; that it's hosted using a free, easy to use system; and that it can be found under your custom domain name :+1:.
+
+[GitHub Pages supports HTTPS for custom domains]: https://blog.github.com/2018-05-01-github-pages-custom-domains-https/
+[GitHub Pages]: https://pages.github.com/
+[Jekyll]: https://jekyllrb.com/
+[this tutorial]: https://www.taniarascia.com/make-a-static-website-with-jekyll/
+[gandi.net]: https://www.gandi.net
+[Domain Admin Page]: https://admin.gandi.net/domain/
+[Let's Encrypt]: https://letsencrypt.org/
+[this blog post]: https://timeandupdate.com/2018/05/custom-domain-in-github-page-support-https/

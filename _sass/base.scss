@@ -26,14 +26,19 @@ a {
   text-decoration: none;
 }
 
-code {
-  word-wrap: normal;
+pre {
+  overflow: auto;
 }
 
 img {
-  width: 100%;
-  height: auto;
-  align-self: center;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.emoji {
+  display: inline-flex;
 }
 
 .mdl-layout {
