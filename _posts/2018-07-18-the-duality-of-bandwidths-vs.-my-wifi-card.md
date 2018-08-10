@@ -32,11 +32,9 @@ It's odd though, Google states that Google Wifi is capable of *Simultaneous dual
 
 I was very excited when my brand new wifi card came in the post. So much so that I rushed to install it in my laptop as soon as it came through the door. However, that excitement soon came to a grinding hault when I discovered that the card that I wanted to install was a different size to the card I was going to replace.
 
-I later discovered that I had ordered an 802.11ac card of the wrong **form factor**. The form factor is a feature of all hardware that determines it shape and size and, by extension, what other hardware components it's compatiable with. The form factor that the wifi card had to be in order to fit my laptop was *Mini PCIe (half height)*. The form factor that I bought was *M.2 (half height)*. Underneath are the said wifi cards, with Mini PCIe first and M.2 second.
+I later discovered that I had ordered an 802.11ac card of the wrong **form factor**. The form factor is a feature of all hardware that determines it shape and size and, by extension, what other hardware components it's compatiable with. The form factor that the wifi card had to be in order to fit my laptop was *Mini PCIe (half height)*. The form factor that I bought was *M.2 (half height)*. Underneath are the said wifi cards, with Mini PCIe on the left and M.2 on the right:
 
-![A Mini PCI Express Wifi card (half height)](/assets/images/mini_pcie.png)
-
-![An M.2 Wifi card (half height)](/assets/images/m2.png)
+![A Mini PCI Express Wifi card (half height) on the left with an M.2 Wifi card (half height) on the right](/assets/images/mini_pcie_vs_m2.png)
 
 So, unfortunately, I had to spend more money than I was expecting to in getting the correct wifi card for my laptop. And, unfortunately, this would not be the last bit of trouble I had to deal with... 
 
@@ -55,10 +53,8 @@ The package failed to build during installation. This wasn't clear to me until I
 ```bash
 ...
 Building initial module for 4.15.0-24-generic
-ERROR: Cannot create report: [Errno 17] File exists:
-'/var/crash/bcmwl-kernel-source.0.crash'
-Error! Bad return status for module build on kernel:
-4.15.0-24-generic (x86_64)
+ERROR: Cannot create report: [Errno 17] File exists: '/var/crash/bcmwl-kernel-source.0.crash'
+Error! Bad return status for module build on kernel: 4.15.0-24-generic (x86_64)
 Consult /var/lib/dkms/bcmwl/6.30.223.271+bdcom/build/make.log for more information.
 modprobe: FATAL: Module wl not found in directory /lib/modules/4.15.0-24-generic
 update-initramfs: deferring update (trigger activated)
