@@ -66,8 +66,6 @@ You may have to wait a few hours or so before you can edit the Domain's DNS reco
 - 185.199.110.153
 - 185.199.111.153
 
-After that, visit the repository settings on GitHub 
-
 Then go to sleep. It takes a very long time for Registrars to update your DNS records so you'll be waiting a long time before you can access your website through its new domain name.
 
 ## Getting an SSL Certificate
