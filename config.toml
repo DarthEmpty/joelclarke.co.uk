@@ -1,0 +1,28 @@
+baseURL = "https://joelclarke.co.uk"
+disablePathToLower = true
+languageCode = "en-uk"
+title = "Joel Clarke"
+enableEmoji = true
+
+[params]
+  author = "Joel Clarke"
+  description = "An Artificial Intelligence PhD student at Royal Holloway University"
+
+  [[params.social]]
+    name = "mail"
+    url = "mailto:joel.clarke273@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/DarthEmpty"
+
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/NlpJoel"
+
+  [params.style]
+    darkestColor = "#212128"
+    darkColor = "#353542"
+    lightColor = "#959595"
+    lightestColor = "#f5f5f5"
+    primaryColor = "#536DFE"
