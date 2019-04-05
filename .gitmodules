@@ -1,3 +1,3 @@
 [submodule "themes/m10c_fork"]
   path = themes/m10c_fork
-  url = git@github.com:vaga/hugo-theme-m10c.git
+  url = https://github.com/DarthEmpty/hugo-theme-m10c.git
