@@ -1,1 +1,1 @@
-img{height:auto;max-width:100%}
+img{height:auto;max-width:100%}.app-header-nav{display:flex;flex-direction:column;margin:1em 0}
