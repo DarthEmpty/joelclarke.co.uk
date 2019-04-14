@@ -3,7 +3,7 @@ disablePathToLower = true
 languageCode = "en-uk"
 title = "Joel Clarke"
 enableEmoji = true
-theme = "m10c_fork"
+theme = "m10c"
 
 [params]
   author = "Joel Clarke"
