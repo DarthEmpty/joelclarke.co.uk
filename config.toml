@@ -7,10 +7,10 @@ theme = "m10c"
 
 [params]
   author = "Joel Clarke"
-  description = "An Artificial Intelligence PhD student at Royal Holloway University"
+  description = "An Artificial Intelligence PhD Student at Royal Holloway University"
 
   [[params.projects]]
-    name = "jonathansmovies.com"
+    name = "Jonathan's Movies"
     url = "https://github.com/arranf/jonathans-movies-client"
     description = "A voting web app that uses Vue and FeathersJS for a smooth interactive experience."
 
