@@ -1,10 +1,20 @@
 {{ define "main" }}
-  <article class="post">
-    <header class="post-header">
+  <article class="home">
+    <header class="home-header">
       <h1 class ="post-title">{{ .Title }}</h1>
     </header>
     <div class="post-content">
       {{ .Content }}
+    </div>
+    <div class="home-projects">
+      {{ range .Site.Params.projects }}
+        <div class="project">
+          <a href="{{ .url }}" target="_blank">
+            <h3 class="project-title">{{ .name }}</h3>
+            <p class="project-description">{{ .description }}</p>
+          </a>
+        </div>
+      {{ end }}
     </div>
   </article>
 {{ end }}

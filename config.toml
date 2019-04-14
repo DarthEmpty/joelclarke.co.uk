@@ -9,6 +9,21 @@ theme = "m10c"
   author = "Joel Clarke"
   description = "An Artificial Intelligence PhD student at Royal Holloway University"
 
+  [[params.projects]]
+    name = "jonathansmovies.com"
+    url = "https://github.com/arranf/jonathans-movies-client"
+    description = "A voting web app that uses Vue and FeathersJS for a smooth interactive experience."
+
+  [[params.projects]]
+    name = "Stammered Voice"
+    url = "https://github.com/DarthEmpty/stammered-voice"
+    description = "A web app made with Vue and FeathersJS to collect volunteered recordings of people with stutters. Inspired by Mozilla's Common Voice"
+
+  [[params.projects]]
+    name = "Kilo"
+    url = "https://github.com/DarthEmpty/kilo"
+    description = "A Flutter app designed to help you keep track of your gym sessions."
+
   [[params.social]]
     name = "mail"
     url = "mailto:joel.clarke273@gmail.com"
