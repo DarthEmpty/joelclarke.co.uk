@@ -1,1 +1,0 @@
-img{height:auto;max-width:100%}.app-header-nav{display:flex;flex-direction:column;margin:1em 0}.home-projects{display:flex;flex-wrap:wrap;justify-content:space-between}@media screen and (min-width:801px){.home-projects .project{max-width:30%}.home-projects .project .project-title{overflow:hidden}}
