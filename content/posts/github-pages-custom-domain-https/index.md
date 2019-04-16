@@ -1,7 +1,8 @@
----
-title: Github Pages, A Custom Domain and HTTPS
-date: 2018-06-20
----
++++
+date = "2018-06-20"
+title = "Github Pages, A Custom Domain and HTTPS"
+
++++
 
 So, it's finally here! My website - complete with blog and gallery - has finally managed to reach a decent standard and find a spot for itself on the internet.
 
@@ -52,7 +53,7 @@ jekyll new <path/to/your/repository>
 
 That's a good looking website that deserves a good looking domain name to go with it!
 
-You'll need to buy an available domain name from a Domain Name Registrar. Personally, if you're going to buy it from anybody, I would recommend [gandi.net] simply because their slogan is literally *No bullshit*. 
+You'll need to buy an available domain name from a Domain Name Registrar. Personally, if you're going to buy it from anybody, I would recommend [gandi.net] simply because their slogan is literally *No bullshit*.
 
 Once you've bought the domain name, you can go to your repository's settings and go to the *GitHub Pages* section. There, you'll see a *Custom Domain* subsection. Fill the text field in said subsection with your domain name as below.
 
