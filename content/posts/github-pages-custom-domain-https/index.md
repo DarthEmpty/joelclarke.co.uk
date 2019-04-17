@@ -1,7 +1,6 @@
 +++
 date = "2018-06-20"
 title = "Github Pages, A Custom Domain and HTTPS"
-
 +++
 
 So, it's finally here! My website - complete with blog and gallery - has finally managed to reach a decent standard and find a spot for itself on the internet.
