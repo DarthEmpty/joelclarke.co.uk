@@ -43,7 +43,7 @@ That was my first taste of the difference between Undergraduate life and PhD lif
 
 At the same time, I was studying...
 
-![Yes... but no.](posts/first-2-terms-as-phd-student/yes_but_no.png)
+![Yes... but no.](/posts/first-2-terms-as-phd-student/yes_but_no.png)
 
 [^1]: Don't worry if you didn't understand some of these terms - in time, I may write a few posts about these concepts but they're not important right now!
 [^2]: Sure, it was for a very different reason but it's definitely still apt.
