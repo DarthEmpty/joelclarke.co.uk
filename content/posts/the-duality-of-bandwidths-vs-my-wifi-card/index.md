@@ -35,7 +35,7 @@ I was very excited when my brand new wifi card came in the post. So much so that
 
 I later discovered that I had ordered an 802.11ac card of the wrong **form factor**. The form factor is a feature of all hardware that determines it shape and size and, by extension, what other hardware components it's compatiable with. The form factor that the wifi card had to be in order to fit my laptop was *Mini PCIe (half height)*. The form factor that I bought was *M.2 (half height)*. Underneath are the said wifi cards, with Mini PCIe on the left and M.2 on the right:
 
-![A Mini PCI Express Wifi card (half height) on the left with an M.2 Wifi card (half height) on the right](posts/the-duality-of-bandwidths-vs-my-wifi-card/mini_pcie_vs_m2.png)
+![A Mini PCI Express Wifi card (half height) on the left with an M.2 Wifi card (half height) on the right](/posts/the-duality-of-bandwidths-vs-my-wifi-card/mini_pcie_vs_m2.png)
 
 So, unfortunately, I had to spend more money than I was expecting to in getting the correct wifi card for my laptop. And, unfortunately, this would not be the last bit of trouble I had to deal with...
 
