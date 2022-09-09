@@ -1,6 +1,7 @@
 +++
 date = "2018-08-10"
 title = "The Duality of Bandwidths vs. My WiFi Card"
+type = "post"
 +++
 
 A while ago, a friend of mine bought [Google Wifi] and started using it as the main wifi router in his house. Both of us being major Google fans, we were very excited about seeing and using such cutting edge technology.

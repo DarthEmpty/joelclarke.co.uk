@@ -3,42 +3,66 @@ disablePathToLower = true
 languageCode = "en-uk"
 title = "Joel Clarke"
 enableEmoji = true
-theme = "m10c"
+theme = "gokarna"
+
+[menu]
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "posts/"
+    weight = 1
+  
+  [[menu.main]]
+    identifier = "gallery"
+    name = "Gallery"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    weight = 3
 
 [params]
-  author = "Joel Clarke"
-  description = "An Artificial Intelligence PhD Student at Royal Holloway University"
+  avatarURL = "avatar.jpg"
+  avatarSize = "size-m"
+  description = "Description pending..."
 
-  [[params.projects]]
-    name = "Jonathan's Movies"
-    url = "https://github.com/arranf/jonathans-movies-client"
-    description = "A voting web app that uses Vue and FeathersJS for a smooth interactive experience."
+  socialIcons = [
+    {name = "email", url = "mailto:joel.clarke273@gmail.com"},
+    {name = "github", url = "https://github.com/DarthEmpty"},
+    {name = "linkedin", url = "https://example.com"},
+  ]
 
-  [[params.projects]]
-    name = "Stammered Voice"
-    url = "https://github.com/DarthEmpty/stammered-voice"
-    description = "A web app made with Vue and FeathersJS to collect volunteered recordings of people with stutters. Inspired by Mozilla's Common Voice"
+#   [[params.projects]]
+#     name = "Jonathan's Movies"
+#     url = "https://github.com/arranf/jonathans-movies-client"
+#     description = "A voting web app that uses Vue and FeathersJS for a smooth interactive experience."
 
-  [[params.projects]]
-    name = "Kilo"
-    url = "https://github.com/DarthEmpty/kilo"
-    description = "A Flutter app designed to help you keep track of your gym sessions."
+#   [[params.projects]]
+#     name = "Stammered Voice"
+#     url = "https://github.com/DarthEmpty/stammered-voice"
+#     description = "A web app made with Vue and FeathersJS to collect volunteered recordings of people with stutters. Inspired by Mozilla's Common Voice"
 
-  [[params.social]]
-    name = "mail"
-    url = "mailto:joel.clarke273@gmail.com"
+#   [[params.projects]]
+#     name = "Kilo"
+#     url = "https://github.com/DarthEmpty/kilo"
+#     description = "A Flutter app designed to help you keep track of your gym sessions."
 
-  [[params.social]]
-    name = "github"
-    url = "https://github.com/DarthEmpty"
+#   [[params.social]]
+#     name = "mail"
+#     url = "mailto:joel.clarke273@gmail.com"
 
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/NlpJoel"
+#   [[params.social]]
+#     name = "github"
+#     url = "https://github.com/DarthEmpty"
 
-  [params.style]
-    darkestColor = "#212128"
-    darkColor = "#353542"
-    lightColor = "#959595"
-    lightestColor = "#f5f5f5"
-    primaryColor = "#536DFE"
+#   [[params.social]]
+#     name = "twitter"
+#     url = "https://twitter.com/NlpJoel"
+
+  # [params.style]
+  #   darkestColor = "#212128"
+  #   darkColor = "#353542"
+  #   lightColor = "#959595"
+  #   lightestColor = "#f5f5f5"
+  #   primaryColor = "#536DFE"
