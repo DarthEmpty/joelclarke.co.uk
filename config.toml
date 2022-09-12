@@ -3,7 +3,7 @@ disablePathToLower = true
 languageCode = "en-uk"
 title = "Joel Clarke"
 enableEmoji = true
-theme = "gokarna"
+theme = ["gokarna", "hugo-easy-gallery"]
 
 [menu]
   # [[menu.main]]
@@ -15,6 +15,7 @@ theme = "gokarna"
   [[menu.main]]
     identifier = "gallery"
     name = "Gallery"
+    url = "gallery/"
     weight = 2
 
   [[menu.main]]
