@@ -1,9 +1,11 @@
----
-title: Hey There!
----
++++
+title = "Joel Clarke"
++++
 
-I'm Joel - a PhD student studying Artificial Intelligence. I'm working on improving Voice Assistants, like *Google Home* and *Amazon Echo*, so that they can understand stammered speech.
+I am a Computer Science graduate with experience in both leadership and AI/ML research.
 
-This site is a continuous project for me to work on, primarily dedicated to telling you about myself and to being a place for me to rant about (hopefully) interesting things.
+I spent an extended period of time working on a PhD at **[Royal Holloway University](rhul.ac.uk)**, focussed on improving Voice Assistants to handle stammered speech using machine learning and deep learning techniques.
 
-In my spare time, I enjoy drawing, playing video games and working on programming projects alone or with friends. Projects that I'm especially proud of include:
+I also help lead **[The Journey Church](thejourney.org.uk)** as part of a voluntary team, where I am responsible for our finances, the content of our website, and maintaining relationships with other churches and Christian initiatives.
+
+I relax by drawing in my spare time! I am inspired by the professional and amateur art that I've seen over the years and am very keen to improve my own skills. Check out the **[Gallery](/gallery/)** if you're at all interested in what I've been up to!

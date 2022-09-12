@@ -1,7 +1,8 @@
----
-title: Github Pages, A Custom Domain and HTTPS
-date: 2018-06-20
----
++++
+date = "2018-06-20"
+title = "Github Pages, A Custom Domain and HTTPS"
+type = "post"
++++
 
 So, it's finally here! My website - complete with blog and gallery - has finally managed to reach a decent standard and find a spot for itself on the internet.
 
@@ -52,11 +53,11 @@ jekyll new <path/to/your/repository>
 
 That's a good looking website that deserves a good looking domain name to go with it!
 
-You'll need to buy an available domain name from a Domain Name Registrar. Personally, if you're going to buy it from anybody, I would recommend [gandi.net] simply because their slogan is literally *No bullshit*. 
+You'll need to buy an available domain name from a Domain Name Registrar. Personally, if you're going to buy it from anybody, I would recommend [gandi.net] simply because their slogan is literally *No bullshit*.
 
 Once you've bought the domain name, you can go to your repository's settings and go to the *GitHub Pages* section. There, you'll see a *Custom Domain* subsection. Fill the text field in said subsection with your domain name as below.
 
-![Custom Domain Subsection](posts/github-pages-custom-domain-https/custom_domain.png)
+![Custom Domain Subsection](/posts/github-pages-custom-domain-https/custom_domain.png)
 
 You may have to wait a few hours or so before you can edit the Domain's DNS records but that's what you'll be doing next (With Gandi, this is done by going to the [Domain Admin Page] and clicking on the appropriate domain name, followed by *DNS Records*).
 
@@ -75,7 +76,7 @@ When you wake up, go and check out your website using your new domain name. We'r
 
 Thankfully, this bit is very easy. GitHub Pages has paired with [Let's Encrypt] to provide free, automatic SSL Certificates to everyone using GitHub Pages. All you have to do is go back to your GitHub repository settings, go back to the *GitHub Pages* section and, this time, go to the subsection entitled *Enforce HTTPS*.
 
-![Enforce HTTPS Subsection](posts/github-pages-custom-domain-https/enforce_https.png)
+![Enforce HTTPS Subsection](/posts/github-pages-custom-domain-https/enforce_https.png)
 
 However, there are 2 possible error messages that may appear next to the checkbox, preventing you from checking it:
 
