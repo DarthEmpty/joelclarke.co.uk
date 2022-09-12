@@ -6,11 +6,11 @@ enableEmoji = true
 theme = "gokarna"
 
 [menu]
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "posts/"
-    weight = 1
+  # [[menu.main]]
+  #   identifier = "blog"
+  #   name = "Blog"
+  #   url = "posts/"
+  #   weight = 1
   
   [[menu.main]]
     identifier = "gallery"
@@ -26,7 +26,7 @@ theme = "gokarna"
 [params]
   avatarURL = "avatar.jpeg"
   avatarSize = "size-l"
-  description = "Computer Scientist. Church Leader. Aspiring Artist."
+  description = "Computer Scientist. Amateur Artist."
 
   socialIcons = [
     {name = "email", url = "mailto:joel.clarke273@gmail.com"},
