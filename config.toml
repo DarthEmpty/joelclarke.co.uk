@@ -27,7 +27,7 @@ theme = ["gokarna", "hugo-easy-gallery"]
 [params]
   avatarURL = "avatar.jpeg"
   avatarSize = "size-l"
-  description = "Computer Scientist. Amateur Artist."
+  description = "Computer Scientist. Learning Leader. Amateur Artist."
 
   socialIcons = [
     {name = "email", url = "mailto:joel.clarke273@gmail.com"},
