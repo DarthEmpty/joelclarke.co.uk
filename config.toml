@@ -1,4 +1,4 @@
-baseURL = "https://joelclarke.co.uk"
+baseURL = "/"
 disablePathToLower = true
 languageCode = "en-uk"
 title = "Joel Clarke"
