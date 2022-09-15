@@ -3,7 +3,7 @@ disablePathToLower = true
 languageCode = "en-uk"
 title = "Joel Clarke"
 enableEmoji = true
-theme = ["gokarna", "hugo-easy-gallery"]
+theme = ["gokarna", "hugo-shortcode-gallery"]
 
 [menu]
   # [[menu.main]]
