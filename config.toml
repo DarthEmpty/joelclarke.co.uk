@@ -21,7 +21,7 @@ theme = ["gokarna", "hugo-shortcode-gallery"]
   [[menu.main]]
     identifier = "cv"
     name = "CV"
-    url = "CV3.pdf"
+    url = "SoftEngCV.pdf"
     weight = 3
 
 [params]
